@@ -162,3 +162,15 @@ body {
 .guestbook-row table td.content {
   white-space: pre;
 }
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: var(--black);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 5px;
+}

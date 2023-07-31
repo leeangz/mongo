@@ -137,7 +137,29 @@
         <p>연아&hearts;우림의 결혼식이 {{ diff }}일 남았습니다.</p>
         <hr />
       </div>
-      <div class="row"></div>
+      <div class="row guestbook-row">
+        <h2>방명록 남기기</h2>
+        <form method="POST" action="/write" class="guestbook">
+          <input type="text" name="name" placeholder="이름" />
+          <textarea rows="3" name="content" placeholder="내용"></textarea>
+          <button type="submit">남기기</button>
+        </form>
+        <table>
+          <tbody>
+            {% for gb in guestbooks %}
+            <tr>
+              <td>{{ gb.name }}</td>
+              <td class="content">{{ gb.content }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="pagination">
+          {% for p in pages %}
+          <a href="/?page={{ p }}">{{ p }}</a>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </body>
 </html>
