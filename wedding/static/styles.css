@@ -1,50 +1,51 @@
 :root {
-    --red: #d25a4b;
-    --blue: #369de9;
-    --gray: #aaaaaa;
-    --black: #050203;
+  --red: #d25a4b;
+  --blue: #369de9;
+  --gray: #aaaaaa;
+  --black: #050203;
 }
 
 @font-face {
-  font-family: 'GowunBatang-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-family: "GowunBatang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 .container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    margin: 0;
-    color: var(--black);
-    font-size: 15px;
+  margin: 0;
+  color: var(--black);
+  font-size: 15px;
 }
 
 .btn {
-    width: 80%;
-    max-width: 280px;
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--black);
-    font-family: 'GowunBatang-Regular';
+  width: 80%;
+  max-width: 280px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--black);
+  font-family: "GowunBatang-Regular";
 }
 
 .first {
-    width:100%;
-    height: 100vh;
-    background-color: #aaaaaa;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/static/wed5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .first .overlay {
@@ -55,10 +56,10 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  font-family: 'GowunBatang-Regular';
+  font-family: "GowunBatang-Regular";
 }
 
-.first .first-top{
+.first .first-top {
   position: absolute;
   font-size: 40px;
   top: 50px;
@@ -76,14 +77,88 @@ body {
 }
 
 .row {
-    padding: 70px 20px;
-    text-align: center;
-    font-family: 'GowunBatang-Regular';
+  padding: 70px 20px;
+  text-align: center;
+  font-family: "GowunBatang-Regular";
 }
 
 .row2 {
-    padding: 70px 20px;
-    text-align: center;
-    font-family: 'GowunBatang-Regular';
-    background: url('/static/bg.png') repeat;
+  padding: 70px 20px;
+  text-align: center;
+  font-family: "GowunBatang-Regular";
+  background: url("/static/bg.png") repeat;
+}
+
+.intro {
+  width: 100%;
+}
+
+.calendar {
+  width: 100%;
+  margin: 30px 0;
+}
+.calendar td {
+  text-align: center;
+  padding: 10px;
+}
+.calendar thead td {
+  font-weight: bold;
+}
+.sun {
+  color: var(--red);
+}
+.sat {
+  color: var(--blue);
+}
+.out {
+  color: var(--gray);
+}
+
+.guestbook-row {
+  background: #ffb18c;
+}
+
+.guestbook input {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.guestbook textarea {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.guestbook button {
+  border: 0;
+  background: rgb(232, 133, 53);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.guestbook-row table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guestbook-row table tr {
+  background: #ffffff;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.guestbook-row table td {
+  padding: 5px 10px;
+}
+
+.guestbook-row table td.content {
+  white-space: pre;
 }
