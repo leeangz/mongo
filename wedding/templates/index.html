@@ -5,18 +5,61 @@
       name="viewport"
       content="width=device-width,initial-scale=1"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/static/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".gallery").slick({
+          adaptiveHeight: true,
+        });
+
+        $(".gallery-image").click(function () {
+          let src = $(this).attr("src");
+          $("#modal-image").attr("src", src);
+          $("#exampleModal").modal("show");
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="first">
         <div class="overlay">
           <p class="first-top">
-            김연아<br />
+            김현빈<br />
             &hearts;<br />
-            고우림
+            손예진
           </p>
-          <p class="first-bottom">2023.07.30 SUN 12:00</p>
+          <p class="first-bottom">2023.08.30 WED 12:00</p>
         </div>
       </div>
       <div class="row2">
@@ -29,49 +72,45 @@
           힘찬 출발의 디딤이 되어 주십시오.
         </p>
       </div>
-      <img src="/static/wed1.jpg" />
-      <div class="row">
+      <img src="/static/wed2.jpg" />
+      <div class="row1">
         <table class="intro">
           <tbody>
             <tr>
-              <td><strong>고미남 강유정</strong></td>
+              <td><strong>김미남 강유정</strong></td>
               <td><small>의 장남</small></td>
-              <td>
-                <strong>우림</strong>
-                <a href="tel:01011111234">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    style="width: 15px; height: 15px"
-                  >
+              <td class="text-right">
+                <strong>현빈</strong>
+                <a href="tel:01012341235">
+                  <svg style="width: 15px; height: 15px" viewBox="0 0 24 24">
                     <path
+                      fill="currentColor"
                       d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
-                    /></svg
-                ></a>
+                    />
+                  </svg>
+                </a>
               </td>
             </tr>
             <tr>
-              <td><strong>김미남 최유정</strong></td>
+              <td><strong>손미남 최유정</strong></td>
               <td><small>의 장녀</small></td>
-              <td>
-                <strong>연아</strong>
-                <a href="tel:01011111234">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    style="width: 15px; height: 15px"
-                  >
+              <td class="text-right">
+                <strong>예진</strong>
+                <a href="tel:01012341235">
+                  <svg style="width: 15px; height: 15px" viewBox="0 0 24 24">
                     <path
+                      fill="currentColor"
                       d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
-                    /></svg
-                ></a>
+                    />
+                  </svg>
+                </a>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="row2">
-        <h3>7월 30일</h3>
+        <h3>8월 30일</h3>
         <h5>오후 12시</h5>
         <hr />
         <table class="calendar">
@@ -88,57 +127,177 @@
           </thead>
           <tbody>
             <tr>
-              <td class="out">29</td>
               <td class="out">30</td>
               <td class="out">31</td>
               <td>1</td>
               <td>2</td>
               <td>3</td>
-              <td class="sat">4</td>
+              <td>4</td>
+              <td class="sat">5</td>
             </tr>
             <tr>
-              <td class="sun">5</td>
-              <td>6</td>
+              <td class="sun">6</td>
               <td>7</td>
               <td>8</td>
               <td>9</td>
               <td>10</td>
-              <td class="sat">11</td>
+              <td>11</td>
+              <td class="sat">12</td>
             </tr>
             <tr>
-              <td class="sun">12</td>
-              <td>13</td>
+              <td class="sun">13</td>
               <td>14</td>
               <td>15</td>
               <td>16</td>
               <td>17</td>
-              <td class="sat">18</td>
+              <td>18</td>
+              <td class="sat">19</td>
             </tr>
             <tr>
-              <td class="sun">19</td>
-              <td>20</td>
+              <td class="sun">20</td>
               <td>21</td>
               <td>22</td>
               <td>23</td>
               <td>24</td>
-              <td class="sat">25</td>
+              <td>25</td>
+              <td class="sat">26</td>
             </tr>
             <tr>
-              <td class="sun">26</td>
-              <td>27</td>
+              <td class="sun">27</td>
               <td>28</td>
               <td>29</td>
-              <td>30</td>
+              <td class="d-day">30</td>
+              <td>31</td>
               <td class="out">1</td>
               <td class="out">2</td>
             </tr>
           </tbody>
         </table>
-        <p>연아&hearts;우림의 결혼식이 {{ diff }}일 남았습니다.</p>
+        <p>
+          현빈<span class="heart">&hearts;</span>예진의 결혼식이 {{ diff }}일
+          남았습니다.
+        </p>
         <hr />
       </div>
-      <div class="row guestbook-row">
-        <h2>방명록 남기기</h2>
+      <div class="row1 roadmap-row">
+        <h4 class="mb-5">찾아오시는 길</h4>
+        <div
+          id="daumRoughmapContainer1651640599845"
+          class="root_daum_roughmap root_daum_roughmap_landing"
+        ></div>
+        <script
+          charset="UTF-8"
+          class="daum_roughmap_loader_script"
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+        ></script>
+
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            timestamp: "1651640599845",
+            key: "2a4rm",
+            mapWidth: "640",
+            mapHeight: "360",
+          }).render();
+        </script>
+        <div class="roadmap-description">
+          <h6>지하철</h6>
+          <div>
+            (도보) 2호선 강남역 0번출구 100m 직진 후<br />
+            오른쪽 횡단보도 건너 직진 50m
+          </div>
+          <h6>셔틀버스</h6>
+          <div>
+            2호선 강남역 10번출구 앞<br />
+            10분 간격으로 운행
+          </div>
+          <h6>버스</h6>
+          <div>
+            일반 10번: <i>OO서울유스호스텔</i><br />
+            100번: <i>OOOO청소년문화센터</i><br />
+            5912번: <i>OOOOO구민회관</i><br />
+            일반 12번 / 직행 1233, 1299-2번 : <i>신화병원</i>
+          </div>
+          <h6>주차</h6>
+          <div>OO유통 지하주차장 (B1-B4)</div>
+          <h6>주소</h6>
+          <div>
+            서울특별시 강남구 OO대로 112<br />
+            OOO 빌딩 5층 (OOOO청소년문화센터 옆)<br />
+            <a href="tel:0212341234">Tel 02-1234-1234</a>
+          </div>
+        </div>
+      </div>
+      <div class="row2">
+        <h4 class="mb-5">갤러리</h4>
+        <div class="gallery">
+          <img src="/static/wed3.jpg" class="gallery-image" />
+          <img src="/static/wed4.jpg" class="gallery-image" />
+          <img src="/static/wed5.jpg" class="gallery-image" />
+          <img src="/static/wed1.jpg" class="gallery-image" />
+          <img src="/static/wed2.jpg" class="gallery-image" />
+        </div>
+      </div>
+      <div class="row1 account-row">
+        <!-- 아이콘 추가 -->
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAIbEAACGxAAGFqWwEAAACBUlEQVRIx8WWPUjjYBjHcw4eOIqiCA4KDiIOctM5uQiKs6CxVKvY6x1olYr4xdHj/MhwcDj4sXkcTk5ugoigbtoTRbHiJghtKmjVaocmfe7/tokmtU2TOBj4Udo8z//Hm7zJU457jyPEDxWAClAOPhjUMcpYbRg9ZoKrwAq4A6QQAfOgVFNXAn4DUVPHev6A6lzhreBB05BJGHwCDSBkUBcDbZnhdeDJoElFVET56uKgXivYMNFklc1UuLzf8TkquJP5GiLuAXpY6LMiYJnlnHzQ4QQUX+smsX8wa/Gt30PSHk+JHd7qKpqfBQxpl6eb7x4Kdw9T5JuPRJeXHv+6SD1vQ9CqE6Q4+kry6RzJ5wI+/ST/c75FUKMXBLoQPJsOVzkde5EfOCixP2Ma+Uxo0gsOXfpwxpn/RRBwvD6fm1jyXCjKWEEnycGf+sITn13BcnqbZt4DtgpVwi5PgLcjiIHK1wIWwELVwuB0+qZbF7ifn2KNYBWBl9ka4us+Smx3pZ6Fa++IIdFfE7249pxWUAta6LCdQ1gwm+B+cZLEHi9FZ7/k25aC4evaSGBiz68YzY63CpZCZgaODYEEfGyymTo0givgB8mUYGlKyhJ+ARotzWJFcIVdUKN89zCJdDz3A2EjyrBhQ2cUfLQ87BG2pYZrfmOScWUwFTJs/5tAeHEOcbHdzP/c+LBFu9vg9AAAAABJRU5ErkJggg=="
+          class="icon-heart"
+        />
+        <h4 class="mb-5">마음 전하실 곳</h4>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  신랑측 계좌번호
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">카카오뱅크 3333-06-0541430</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  신부측 계좌번호
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">신한은행 110-482-859945</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row2 guestbook-row">
+        <h4 class="mb-5">방명록 남기기</h4>
         <form method="POST" action="/write" class="guestbook">
           <input type="text" name="name" placeholder="이름" />
           <textarea rows="3" name="content" placeholder="내용"></textarea>
@@ -154,12 +313,31 @@
             {% endfor %}
           </tbody>
         </table>
-        <div class="pagination">
-          {% for p in pages %}
-          <a href="/?page={{ p }}">{{ p }}</a>
-          {% endfor %}
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img id="modal-image" />
+          <div class="mymodal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <script src="/static/pureSnow.js"></script>
   </body>
 </html>

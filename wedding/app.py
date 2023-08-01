@@ -22,7 +22,7 @@ def write():
 @app.route('/')
 def index():
     now = datetime.datetime.now()
-    wedding = datetime.datetime(2023, 7, 30, 0, 0, 0)
+    wedding = datetime.datetime(2023, 8, 30, 0, 0, 0)
     diff = (wedding - now).days
 
     page = int(request.args.get('page', 1))
