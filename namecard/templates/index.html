@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>명함 만들기</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="/static/main.css" />
+    <script defer src="/static/main.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <p>'만들기' 버튼을 누르면, 명함이 만들어집니다!</p>
+      <input class="name" placeholder="이름" />
+      <input class="title" placeholder="직책" />
+      <input class="phone" placeholder="전화번호" />
+      <input class="email" placeholder="이메일" />
+      <div class="btn">만들기</div>
+    </div>
+
+    <div class="card">
+      <!-- 다른 이미지를 사용할 수 있어요 -->
+      <img
+        src="https://heropy.blog/css/images/logo.png"
+        alt="Photo"
+        class="photo"
+      />
+      <div>
+        <div class="name"></div>
+        <div class="title">
+          <span class="material-symbols-outlined">title</span>
+          <span class="value"></span>
+        </div>
+        <div class="phone">
+          <span class="material-symbols-outlined">call</span>
+          <span class="value"></span>
+        </div>
+        <div class="email">
+          <span class="material-symbols-outlined">mail</span>
+          <span class="value"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
