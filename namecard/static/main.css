@@ -1,4 +1,5 @@
 body {
+  background: #eee;
   color: #333;
   line-height: 1;
   padding-left: 10px;
@@ -6,6 +7,10 @@ body {
   background-image: url("https://heropy.blog/css/images/pattern.png");
 }
 .form {
+  border-radius: 6px;
+  background: #fff;
+  margin: 40px auto 20px;
+  padding: 30px 20px;
   width: 400px;
   box-sizing: border-box;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
@@ -21,13 +26,30 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 .form .btn {
+  border-radius: 6px;
+  margin: 14px auto 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
   cursor: pointer;
   background-color: #ffa32d;
   color: #fff;
 }
 .card {
+  align-items: center;
+  border-radius: 6px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 400px;
+  height: 240px;
   box-sizing: border-box;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
   display: none;
@@ -45,6 +67,9 @@ body {
 }
 .card .name {
   letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 .card .title,
 .card .phone,
